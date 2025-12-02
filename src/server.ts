@@ -220,6 +220,6 @@ app.post("/mcp", async (req: Request, res: Response) => {
 });
 
 const PORT = parseInt(process.env.PORT || "3001", 10);
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`MCP Server (Streamable HTTP) listening at http://localhost:${PORT}/mcp`);
 });
